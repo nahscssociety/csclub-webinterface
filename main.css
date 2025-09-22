@@ -1,1 +1,68 @@
+/* Base reset */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: #f7f9fc; color: #111; }
+
+/* Navbar from user */
+.navbar {
+	overflow: hidden;
+	background: linear-gradient(90deg, #1e3c72, #2a5298);
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+	background-color: #ffeb3b;
+	color: #333;
+	transform: scale(1.05);
+}
+
+.skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip-link:focus { left: 10px; top: 10px; width: auto; height: auto; background: #fff; padding: 8px; z-index: 2000; border: 2px solid #000; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+main { padding-top: 120px; }
+
+.title { text-align: center; font-family: 'Lobster', cursive; font-size: 70px; color: cyan; font-weight: bold; margin-top: 100px; }
+h1 { font-family: 'Lobster', cursive; font-size: 70px; }
+
+.table-container { width: 80%; margin: 20px auto; border: 2px solid #000; border-radius: 10px; padding: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+
+table { width: 100%; border-collapse: separate; border-spacing: 10px; }
+
+th, td { padding: 30px; text-align: left; background-color: #2a5298; color: #fff; border: 5px solid #555; border-radius: 10px; }
+
+.image-cell { width: 100px; height: 100px; background-color: #ccc; background-size: cover; background-position: center; }
+
+td:nth-child(2) { width: 50%; }
+td:nth-child(3) { width: 100px; }
+
+.download-link { color: #ffeb3b; text-decoration: none; }
+.download-link:hover { text-decoration: underline; }
+
+.day-section { margin-top: 40px; }
+.subheading { text-align: center; font-size: 28px; color: #ffeb3b; margin-bottom: 20px; font-weight: bold; }
+
+a:hover { text-decoration: underline; }
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .navbar a { float: none; display: block; text-align: left; padding: 12px 16px; }
+  .title, h1 { font-size: 36px; }
+  main { padding-top: 160px; }
+}
+
 

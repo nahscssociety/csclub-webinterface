@@ -1,1 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Members - NAHS CS Club</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+		<body>
+			<a class="skip-link" href="#main">Skip to main content</a>
+			<div class="navbar">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="events.html">Events</a>
+				<a href="projects.html">Projects</a>
+				<a href="members.html">Members</a>
+			</div>
+			<header class="site-header" aria-hidden="true">
+				<div class="container nav-row" style="visibility:hidden;height:0;overflow:hidden;">
+					<!-- legacy header preserved but hidden because .navbar now handles navigation -->
+				</div>
+			</header>
+
+		<main class="container">
+			<h2>Members</h2>
+			<p>Our club welcomes students of all levels. Meet some of our active members below.</p>
+
+			<section class="member-grid">
+				<article class="member">
+					<h4>Alex R.</h4>
+					<p>Lead on the robotics dashboard. Mentor and competitive programmer.</p>
+				</article>
+				<article class="member">
+					<h4>Sam K.</h4>
+					<p>Frontend lead and workshop organizer.</p>
+				</article>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-row">
+				<p>© <span id="year"></span> NAHS CS Club — <a href="projects.html">Projects</a></p>
+				<p class="small">Contact: <a href="mailto:csclub@example.com">csclub@example.com</a></p>
+			</div>
+		</footer>
+
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
+</html>
 
