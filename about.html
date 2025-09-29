@@ -4,16 +4,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>About - NAHS CS Club</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+		<meta name="description" content="About NAHS CS Club — who we are and what we do.">
+		<link rel="icon" href="favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg">
 		<link rel="stylesheet" href="main.css" />
 	</head>
 		<body>
 			<a class="skip-link" href="#main">Skip to main content</a>
-			<div class="navbar">
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="events.html">Events</a>
-				<a href="projects.html">Projects</a>
-				<a href="members.html">Members</a>
+			<div class="navbar" role="navigation" aria-label="Main navigation">
+				<a class="brand" href="index.html">NAHS CS Club</a>
+				<button id="nav-toggle" aria-expanded="false" aria-controls="primary-menu">☰</button>
+				<div class="menu" id="primary-menu">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="events.html">Events</a>
+					<a href="projects.html">Projects</a>
+					<a href="members.html">Members</a>
+				</div>
 			</div>
 			<header class="site-header" aria-hidden="true">
 				<div class="container nav-row" style="visibility:hidden;height:0;overflow:hidden;">
@@ -21,7 +29,7 @@
 				</div>
 			</header>
 
-		<main class="container">
+		<main id="main" class="container">
 			<h2>About</h2>
 			<p>NAHS CS Club is a student-run organization focused on building projects, learning computer science, and participating in competitions.</p>
 
@@ -42,7 +50,8 @@
 			</div>
 		</footer>
 
-		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+			<script src="nav.js"></script>
+			<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 	</body>
 </html>
 
