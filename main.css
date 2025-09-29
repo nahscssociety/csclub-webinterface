@@ -1,5 +1,5 @@
 :root{
-	--bg: #f7f9fc;
+	--bg: #5284ce;
 	--text: #111827;
 	--nav-grad-start: #1e3c72;
 	--nav-grad-end: #2a5298;
@@ -63,6 +63,17 @@ a:hover{text-decoration:underline}
 	.title,h1{font-size:36px}
 	main{padding-top:160px}
 	.table-container{width:95%}
+}
+
+/* Contact form styles */
+.contact-section{background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(255,255,255,.4));padding:2rem;border-radius:10px;margin:2rem auto}
+.contact-form{max-width:640px;margin:0 auto;display:grid;gap:1rem}
+.contact-form .form-row{display:flex;flex-direction:column}
+.contact-form label{font-weight:600;margin-bottom:.25rem;color:var(--muted)}
+.contact-form input,.contact-form select{padding:.6rem .75rem;border-radius:8px;border:1px solid rgba(0,0,0,.08)}
+
+@media (max-width:600px){
+  .contact-section{padding:1rem;margin:1rem}
 }
 
 
