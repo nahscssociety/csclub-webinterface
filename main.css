@@ -1,11 +1,12 @@
 :root{
-	--bg: #5284ce;
-	--text: #111827;
-	--nav-grad-start: #1e3c72;
-	--nav-grad-end: #2a5298;
-	--accent: #ffeb3b;
-	--muted: #6b7280;
-	--card-bg: #ffffff;
+	/* Calm cyber theme: navy + cyan */
+	--bg: linear-gradient(180deg,#031026 0%, #07143a 100%); /* page background */
+	--text: #e6f7ff; /* light cyan text */
+	--nav-grad-start: #07203a; /* darker navy */
+	--nav-grad-end: #0a3a57; /* teal-blue */
+	--accent: #00cfe6; /* calm cyan accent */
+	--muted: #89a6b8; /* muted cyan for labels */
+	--card-bg: rgba(255,255,255,0.02); /* translucent card on dark bg */
 }
 
 /* Base reset */
@@ -21,12 +22,12 @@ main{padding-top:120px}
 
 /* Navbar (responsive) */
 .navbar{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,var(--nav-grad-start),var(--nav-grad-end));position:fixed;top:0;left:0;width:100%;z-index:1000;padding:6px 12px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.navbar .brand{color:#fff;font-weight:700;text-decoration:none;margin-right:12px}
-.navbar #nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:22px;padding:8px;cursor:pointer}
+.navbar .brand{color:var(--accent);font-weight:700;text-decoration:none;margin-right:12px}
+.navbar #nav-toggle{display:none;background:transparent;border:0;color:var(--accent);font-size:22px;padding:8px;cursor:pointer}
 .navbar .menu{display:flex;gap:6px;align-items:center}
-.navbar .menu a{color:#f2f2f2;text-decoration:none;padding:10px 14px;border-radius:6px;transition:all .18s ease;font-size:16px}
-.navbar .menu a:hover{background:var(--accent);color:#111;transform:translateY(-2px)}
-.navbar .menu a[aria-current="page"], .navbar .menu a.active{background:rgba(255,255,255,.12);box-shadow:inset 0 -3px 0 var(--accent)}
+.navbar .menu a{color:rgba(230,247,255,0.95);text-decoration:none;padding:10px 14px;border-radius:6px;transition:all .18s ease;font-size:16px}
+.navbar .menu a:hover{background:rgba(0,207,230,0.10);color:var(--text);transform:translateY(-2px)}
+.navbar .menu a[aria-current="page"], .navbar .menu a.active{background:rgba(0,207,230,0.10);box-shadow:inset 0 -3px 0 var(--accent)}
 
 /* Mobile: collapse menu behind toggle */
 @media (max-width:720px){
@@ -37,8 +38,8 @@ main{padding-top:120px}
 }
 
 /* Buttons */
-.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600;background:#111;color:#fff;transition:transform .15s ease,box-shadow .15s}
-.btn.primary{background:linear-gradient(90deg,#2563eb,#1e40af);box-shadow:0 6px 18px rgba(16,24,40,.08)}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600;background:rgba(255,255,255,0.06);color:var(--text);transition:transform .15s ease,box-shadow .15s}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#1e3c72);box-shadow:0 8px 30px rgba(0,207,230,.06);color:#00121a}
 .btn:hover{transform:translateY(-3px)}
 
 /* Cards / grids */
@@ -50,12 +51,12 @@ main{padding-top:120px}
 .project{background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,.04)}
 
 /* Focus styles */
-:focus{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+:focus{outline:3px solid rgba(0,207,230,0.55);outline-offset:3px;border-radius:6px}
 
 /* Tables and other helpers preserved from earlier but toned down */
-.table-container{width:80%;margin:20px auto;border-radius:10px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(255,255,255,.4))}
+.table-container{width:80%;margin:20px auto;border-radius:10px;padding:20px;background:linear-gradient(180deg,rgba(6,18,30,.6),rgba(6,18,30,.4))}
 table{width:100%;border-collapse:separate;border-spacing:10px}
-th,td{padding:20px;text-align:left;background:var(--nav-grad-end);color:#fff;border-radius:8px}
+th,td{padding:20px;text-align:left;background:linear-gradient(180deg,var(--nav-grad-end),rgba(10,58,87,0.85));color:rgba(230,247,255,0.95);border-radius:8px}
 
 a:hover{text-decoration:underline}
 
@@ -66,11 +67,11 @@ a:hover{text-decoration:underline}
 }
 
 /* Contact form styles */
-.contact-section{background:linear-gradient(180deg,rgba(255,255,255,.6),rgba(255,255,255,.4));padding:2rem;border-radius:10px;margin:2rem auto}
+.contact-section{background:linear-gradient(180deg,rgba(4,14,26,0.55),rgba(6,22,36,0.35));padding:2rem;border-radius:10px;margin:2rem auto}
 .contact-form{max-width:640px;margin:0 auto;display:grid;gap:1rem}
 .contact-form .form-row{display:flex;flex-direction:column}
 .contact-form label{font-weight:600;margin-bottom:.25rem;color:var(--muted)}
-.contact-form input,.contact-form select{padding:.6rem .75rem;border-radius:8px;border:1px solid rgba(0,0,0,.08)}
+.contact-form input,.contact-form select{padding:.6rem .75rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)}
 
 @media (max-width:600px){
   .contact-section{padding:1rem;margin:1rem}
