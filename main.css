@@ -9,6 +9,17 @@
 	--card-bg: rgba(255,255,255,0.02); /* translucent card on dark bg */
 }
 
+/* Light theme variables applied when the html element has .light-theme */
+html.light-theme{
+	--bg: linear-gradient(180deg,#fafafa 0%, #f2f6f9 100%);
+	--text: #081826; /* dark text */
+	--nav-grad-start: #e6f0f6;
+	--nav-grad-end: #dbeaf3;
+	--accent: #007fae;
+	--muted: #5b6d76;
+	--card-bg: rgba(2,6,23,0.03);
+}
+
 /* Base reset */
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:var(--text);}
