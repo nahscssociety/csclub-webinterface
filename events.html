@@ -1,38 +1,13 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Events - NAHS CS Club</title>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
-		<meta name="description" content="Events — upcoming workshops and meetings for NAHS CS Club.">
-		<link rel="icon" href="favicon.ico" />
-		<link rel="icon" type="image/svg+xml" href="favicon.svg">
+Events new code
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 		<link rel="stylesheet" href="main.css" />
 	</head>
 		<body>
+		<body class="events-page">
 			<a class="skip-link" href="#main">Skip to main content</a>
 			<div class="navbar" role="navigation" aria-label="Main navigation">
 				<a class="brand" href="index.html">NAHS CS Club</a>
-				<button id="nav-toggle" aria-expanded="false" aria-controls="primary-menu">☰</button>
-				<div class="menu" id="primary-menu">
-					<a href="index.html">Home</a>
-					<a href="about.html">About</a>
-					<a href="events.html">Events</a>
-					<a href="projects.html">Projects</a>
-					<a href="members.html">Members</a>
-					<a href="join.html">Join</a>
-					
-				</div>
-			</div>
-			<header class="site-header" aria-hidden="true">
-				<div class="container nav-row" style="visibility:hidden;height:0;overflow:hidden;">
-					<!-- legacy header preserved but hidden because .navbar now handles navigation -->
-				</div>
-			</header>
-
-		<main id="main" class="container">
-			<h2>Events</h2>
+@@ -36,11 +36,32 @@ <h2>Events</h2>
 			<p>Check back for upcoming workshops, hack nights, and competition practices.</p>
 
 			<section id="upcoming">
@@ -41,19 +16,32 @@
 					<li>Oct 6 — Next official club meeting.</li>
 					<li>Oct 8 — GT Induction Cerremony, Wednesday!</li>					
 				</ul>
+				<h3>Upcoming Events</h3>
+				<div class="event-cards">
+					<div class="event-card">
+						<div class="event-date">
+							<span class="month">Oct</span>
+							<span class="day">6</span>
+						</div>
+						<div class="event-details">
+							<h4>Official Club Meeting</h4>
+							<p>Join us for our weekly club meeting and workshop</p>
+							<span class="event-time">🕒 3:00 PM - 4:30 PM</span>
+						</div>
+					</div>
+					
+					<div class="event-card">
+						<div class="event-date">
+							<span class="month">Oct</span>
+							<span class="day">8</span>
+						</div>
+						<div class="event-details">
+							<h4>GT Induction Ceremony</h4>
+							<p>Wednesday ceremony for new members</p>
+							<span class="event-time">🕒 4:00 PM - 5:30 PM</span>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
-
-		<footer class="site-footer">
-			<div class="container footer-row">
-				<p>© <span id="year"></span> NAHS CS Club — <a href="about.html">About</a></p>
-				<p class="small">Contact: <a href="mailto:nahscsclub@gmail.com">nahscsclub@gmail.com</a></p>
-			</div>
-		</footer>
-
-			<script src="nav.js"></script>
-			<!-- Removed theme.js include -->
-			<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-	</body>
-</html>
 
