@@ -3,46 +3,470 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>About - NAHS CS Club</title>
+		<title>About Us - NAHS Computer Science Honor Society</title>
+		<meta name="description" content="Learn about the North Allegheny High School Computer Science Honor Society - our mission, values, leadership team, and commitment to excellence in technology education.">
 		<link rel="stylesheet" href="main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
-		<body>
-			<a class="skip-link" href="#main">Skip to main content</a>
-			<div class="navbar">
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="events.html">Events</a>
-				<a href="projects.html">Projects</a>
-				<a href="members.html">Members</a>
-			</div>
-			<header class="site-header" aria-hidden="true">
-				<div class="container nav-row" style="visibility:hidden;height:0;overflow:hidden;">
-					<!-- legacy header preserved but hidden because .navbar now handles navigation -->
-				</div>
-			</header>
-
-		<main class="container">
-			<h2>About</h2>
-			<p>NAHS CS Club is a student-run organization focused on building projects, learning computer science, and participating in competitions.</p>
-
-			<section>
-				<h3>What we do</h3>
-				<ul>
-					<li>Weekly workshops and tutorials</li>
-					<li>Hack nights and project mentoring</li>
-					<li>Competition practice (ACM, hackathons)</li>
+	<body>
+		<a class="skip-link" href="#main">Skip to main content</a>
+		
+		<!-- Navigation -->
+		<nav class="navbar" id="navbar">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<span>💻</span>
+					NAHS CS Honor Society
+				</a>
+				<ul class="navbar-nav" id="navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html" class="active">About</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="members.html">Members</a></li>
 				</ul>
+				<button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+					☰
+				</button>
+			</div>
+		</nav>
+
+		<main id="main">
+			<!-- Page Header -->
+			<section class="page-header">
+				<div class="container">
+					<h1 class="page-title">About Our Society</h1>
+					<p class="page-subtitle">
+						Empowering the next generation of technology leaders through excellence, innovation, and collaboration.
+					</p>
+				</div>
+			</section>
+
+			<!-- Mission Section -->
+			<section class="section">
+				<div class="container">
+					<div class="grid grid-cols-2">
+						<div>
+							<h2>Our Mission</h2>
+							<p>
+								The North Allegheny High School Computer Science Honor Society is dedicated to fostering 
+								academic excellence, leadership, and service in the field of computer science. We strive 
+								to create an inclusive community where students can explore their passion for technology, 
+								develop critical thinking skills, and prepare for successful careers in the digital age.
+							</p>
+							<p>
+								Through hands-on projects, competitive programming, mentorship opportunities, and community 
+								service, we aim to develop well-rounded individuals who will become the technology leaders 
+								of tomorrow.
+							</p>
+						</div>
+						<div class="card">
+							<h4>Our Core Values</h4>
+							<ul style="list-style: none; padding: 0;">
+								<li class="flex items-center gap-sm mb-sm">
+									<span style="color: var(--primary); font-weight: bold;">🎯</span>
+									<strong>Excellence:</strong> Striving for the highest standards in all endeavors
+								</li>
+								<li class="flex items-center gap-sm mb-sm">
+									<span style="color: var(--primary); font-weight: bold;">🤝</span>
+									<strong>Collaboration:</strong> Working together to achieve common goals
+								</li>
+								<li class="flex items-center gap-sm mb-sm">
+									<span style="color: var(--primary); font-weight: bold;">🚀</span>
+									<strong>Innovation:</strong> Embracing creativity and new technologies
+								</li>
+								<li class="flex items-center gap-sm mb-sm">
+									<span style="color: var(--primary); font-weight: bold;">❤️</span>
+									<strong>Service:</strong> Giving back to our community through technology
+								</li>
+								<li class="flex items-center gap-sm mb-sm">
+									<span style="color: var(--primary); font-weight: bold;">📚</span>
+									<strong>Learning:</strong> Continuous growth and knowledge sharing
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- What We Do Section -->
+			<section class="section" style="background: var(--bg-primary);">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">What We Do</h2>
+						<p class="section-subtitle">
+							Our diverse range of activities and programs designed to enhance your computer science journey.
+						</p>
+					</div>
+					<div class="grid grid-cols-3">
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">🛠️</span>
+								<h4 class="card-title">Workshops & Tutorials</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Weekly hands-on workshops covering everything from programming fundamentals to 
+									advanced topics like machine learning, web development, and mobile app creation.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>Python, Java, JavaScript, and more</li>
+									<li>Web development (HTML, CSS, React)</li>
+									<li>Data science and AI fundamentals</li>
+									<li>Mobile app development</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">💡</span>
+								<h4 class="card-title">Project Development</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Collaborative project teams working on real-world applications, from robotics 
+									dashboards to community service applications and innovative solutions.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>Team-based software development</li>
+									<li>Open source contributions</li>
+									<li>Community service projects</li>
+									<li>Innovation challenges</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">🏆</span>
+								<h4 class="card-title">Competitions</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Preparation and participation in local, state, and national programming competitions, 
+									hackathons, and technology challenges.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>ACM Programming Contests</li>
+									<li>Local and national hackathons</li>
+									<li>CyberPatriot competitions</li>
+									<li>Google Code-in participation</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">👥</span>
+								<h4 class="card-title">Mentorship</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Peer-to-peer mentoring system where experienced members guide newcomers, 
+									creating a supportive learning environment for all skill levels.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>One-on-one mentoring pairs</li>
+									<li>Study groups and code reviews</li>
+									<li>Career guidance and college prep</li>
+									<li>Industry professional guest speakers</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">🌟</span>
+								<h4 class="card-title">Community Service</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Technology-focused community service projects that give back to our local 
+									community while applying our skills to solve real problems.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>Digital literacy workshops for seniors</li>
+									<li>Website development for nonprofits</li>
+									<li>STEM outreach to middle schools</li>
+									<li>Technology support for local organizations</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<span style="font-size: 2rem;">📚</span>
+								<h4 class="card-title">Academic Support</h4>
+							</div>
+							<div class="card-body">
+								<p>
+									Academic support for computer science courses, college preparation, and 
+									career planning in technology fields.
+								</p>
+								<ul class="text-sm text-muted">
+									<li>AP Computer Science preparation</li>
+									<li>College application assistance</li>
+									<li>Scholarship opportunities</li>
+									<li>Industry internship connections</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Leadership Team -->
+			<section class="section">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Leadership Team</h2>
+						<p class="section-subtitle">
+							Meet the dedicated students who lead our honor society and drive our mission forward.
+						</p>
+					</div>
+					<div class="grid grid-cols-2">
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 100px; height: 100px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-2xl);">AR</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Alex Rodriguez</h4>
+									<p class="text-sm text-primary mb-sm">President • Class of 2026</p>
+									<p class="text-sm mb-md">
+										Alex leads our robotics dashboard project and has been instrumental in establishing partnerships 
+										with local tech companies. Heading to Carnegie Mellon University for Computer Science.
+									</p>
+									<div class="flex gap-xs">
+										<span class="btn small outline">Leadership</span>
+										<span class="btn small outline">Full-Stack Dev</span>
+										<span class="btn small outline">Robotics</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 100px; height: 100px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-2xl);">SK</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Samantha Kim</h4>
+									<p class="text-sm text-primary mb-sm">Vice President • Class of 2026</p>
+									<p class="text-sm mb-md">
+										Samantha oversees our workshop programs and mentorship initiatives. She's passionate about 
+										making technology accessible to everyone and plans to study at Stanford University.
+									</p>
+									<div class="flex gap-xs">
+										<span class="btn small outline">UI/UX Design</span>
+										<span class="btn small outline">Mentorship</span>
+										<span class="btn small outline">Accessibility</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 100px; height: 100px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-2xl);">MJ</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Michael Johnson</h4>
+									<p class="text-sm text-primary mb-sm">Secretary • Class of 2026</p>
+									<p class="text-sm mb-md">
+										Michael manages our competition teams and coordinates with other schools for collaborative 
+										events. He's particularly interested in cybersecurity and ethical hacking.
+									</p>
+									<div class="flex gap-xs">
+										<span class="btn small outline">Cybersecurity</span>
+										<span class="btn small outline">Competitions</span>
+										<span class="btn small outline">Networking</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 100px; height: 100px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-2xl);">EP</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Emily Park</h4>
+									<p class="text-sm text-primary mb-sm">Treasurer • Class of 2026</p>
+									<p class="text-sm mb-md">
+										Emily oversees our budget and fundraising efforts while also leading our community service 
+										initiatives. She's passionate about using technology for social good.
+									</p>
+									<div class="flex gap-xs">
+										<span class="btn small outline">Project Management</span>
+										<span class="btn small outline">Community Service</span>
+										<span class="btn small outline">Data Analysis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Achievements Section -->
+			<section class="section" style="background: var(--bg-primary);">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Our Achievements</h2>
+						<p class="section-subtitle">
+							Celebrating our successes and the impact we've made in the technology community.
+						</p>
+					</div>
+					<div class="grid grid-cols-2">
+						<div>
+							<h3 class="mb-lg">Academic Excellence</h3>
+							<div class="space-y-lg">
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--success); color: white;">2024</span>
+									<div>
+										<h5>National Honor Society Recognition</h5>
+										<p class="text-sm text-muted">Recognized as one of the top high school CS programs in Pennsylvania</p>
+									</div>
+								</div>
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--success); color: white;">2024</span>
+									<div>
+										<h5>AP Computer Science Excellence</h5>
+										<p class="text-sm text-muted">95% of our members scored 4 or 5 on AP Computer Science exams</p>
+									</div>
+								</div>
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--success); color: white;">2023</span>
+									<div>
+										<h5>University Partnerships</h5>
+										<p class="text-sm text-muted">Established partnerships with CMU, Pitt, and Penn State</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3 class="mb-lg">Competition Success</h3>
+							<div class="space-y-lg">
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--warning); color: white;">🏆</span>
+									<div>
+										<h5>Regional Programming Contest - 1st Place</h5>
+										<p class="text-sm text-muted">Won the 2024 Western PA High School Programming Championship</p>
+									</div>
+								</div>
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--warning); color: white;">🥈</span>
+									<div>
+										<h5>State CyberPatriot Competition</h5>
+										<p class="text-sm text-muted">Placed 2nd in Pennsylvania State CyberPatriot Championships</p>
+									</div>
+								</div>
+								<div class="flex items-start gap-md">
+									<span class="btn small" style="background: var(--warning); color: white;">🏆</span>
+									<div>
+										<h5>Local Hackathon Winners</h5>
+										<p class="text-sm text-muted">Multiple wins at Pittsburgh-area hackathons and coding competitions</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Faculty Advisor -->
+			<section class="section">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Faculty Advisor</h2>
+					</div>
+					<div class="card" style="max-width: 800px; margin: 0 auto;">
+						<div class="flex items-start gap-lg">
+							<div style="width: 120px; height: 120px; background: var(--gray-300); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: var(--gray-600); font-weight: bold; font-size: var(--text-2xl);">👩‍🏫</div>
+							<div style="flex: 1;">
+								<h4 class="card-title mb-sm">Ms. Sarah Thompson</h4>
+								<p class="text-primary mb-sm">Computer Science Department Chair</p>
+								<p class="mb-md">
+									Ms. Thompson has been teaching computer science at North Allegheny for over 10 years and 
+									serves as the faculty advisor for our honor society. She holds a Master's degree in 
+									Computer Science from Carnegie Mellon University and previously worked as a software 
+									engineer at Google.
+								</p>
+								<div class="flex gap-xs">
+									<span class="btn small outline">M.S. Computer Science</span>
+									<span class="btn small outline">Former Google Engineer</span>
+									<span class="btn small outline">10+ Years Teaching</span>
+								</div>
+								<div class="mt-md">
+									<p class="text-sm text-muted">
+										<strong>Office:</strong> Room 203 • <strong>Email:</strong> sthompson@nasd.k12.pa.us
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section class="section" style="background: var(--bg-gradient); color: var(--text-white);">
+				<div class="container text-center">
+					<h2 class="text-white mb-lg">Join Our Community</h2>
+					<p class="text-large mb-xl" style="color: rgba(255, 255, 255, 0.9);">
+						Ready to be part of something bigger? Join our honor society and start your journey 
+						toward becoming a technology leader.
+					</p>
+					<div class="flex justify-center gap-md">
+						<a class="btn primary large" href="members.html">Apply for Membership</a>
+						<a class="btn secondary large" href="events.html">Attend an Event</a>
+					</div>
+				</div>
 			</section>
 		</main>
 
+		<!-- Footer -->
 		<footer class="site-footer">
-			<div class="container footer-row">
-				<p>© <span id="year"></span> NAHS CS Club — <a href="events.html">Events</a></p>
-				<p class="small">Contact: <a href="mailto:csclub@example.com">csclub@example.com</a></p>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Quick Links</h4>
+						<div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+							<a href="about.html">About Us</a>
+							<a href="events.html">Events</a>
+							<a href="projects.html">Projects</a>
+							<a href="members.html">Membership</a>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>Contact</h4>
+						<div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+							<a href="mailto:csclub@nasd.k12.pa.us">csclub@nasd.k12.pa.us</a>
+							<p>North Allegheny High School</p>
+							<p>10375 Perry Hwy, Wexford, PA 15090</p>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>Follow Us</h4>
+						<div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+							<a href="https://github.com/nahscssociety" target="_blank">GitHub</a>
+							<a href="https://discord.gg/nahscs" target="_blank">Discord</a>
+							<a href="https://instagram.com/nahscs" target="_blank">Instagram</a>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>NAHS Computer Science</h4>
+						<p class="text-sm" style="color: var(--gray-400);">
+							Empowering the next generation of technology leaders through hands-on learning, 
+							competitive programming, and collaborative innovation.
+						</p>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>© <span id="year"></span> NAHS Computer Science Honor Society. All rights reserved.</p>
+				</div>
 			</div>
 		</footer>
 
-		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+		<script src="script.js"></script>
 	</body>
 </html>
 

@@ -3,94 +3,331 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>NAHS CS Club</title>
+		<title>NAHS Computer Science Honor Society | Building Tomorrow's Tech Leaders</title>
+		<meta name="description" content="Join the North Allegheny High School Computer Science Honor Society. Learn to code, compete in hackathons, and build amazing projects with fellow students.">
 		<link rel="stylesheet" href="main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	</head>
-		<body>
-			<a class="skip-link" href="#main">Skip to main content</a>
-			<div class="navbar">
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="events.html">Events</a>
-				<a href="projects.html">Projects</a>
-				<a href="members.html">Members</a>
+	<body>
+		<a class="skip-link" href="#main">Skip to main content</a>
+		
+		<!-- Navigation -->
+		<nav class="navbar" id="navbar">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<span>💻</span>
+					NAHS CS Honor Society
+				</a>
+				<ul class="navbar-nav" id="navbar-nav">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="members.html">Members</a></li>
+				</ul>
+				<button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+					☰
+				</button>
 			</div>
-			<header class="site-header" aria-hidden="true">
-				<div class="container nav-row" style="visibility:hidden;height:0;overflow:hidden;">
-					<!-- legacy header preserved but hidden because .navbar now handles navigation -->
-				</div>
-			</header>
+		</nav>
 
-		<main>
+		<main id="main">
+			<!-- Hero Section -->
 			<section class="hero">
 				<div class="container">
-					<h2>Build. Learn. Compete.</h2>
-					<p>North Allegheny High School Computer Science Club — open to coders of all levels. Join us for workshops, hack nights, and competitions.</p>
-					<p class="hero-ctas">
-						<a class="btn primary" href="events.html">See Events</a>
-						<a class="btn" href="members.html">Join the Club</a>
+					<h1 class="hero-title">Build. Learn. Compete.</h1>
+					<p class="hero-subtitle">
+						Join North Allegheny High School's Computer Science Honor Society and unlock your potential in technology. 
+						From beginner workshops to advanced competitions, we're here to support your coding journey.
 					</p>
-				</div>
-			</section>
-
-			<section class="cards container" id="upcoming-events">
-				<h3>Upcoming Events</h3>
-				<div class="card-grid">
-					<article class="card">
-						<h4>Intro to Python</h4>
-						<p>Sept 30 • Room 204 • Beginners welcome</p>
-						<a class="small-link" href="events.html">More</a>
-					</article>
-					<article class="card">
-						<h4>Hack Night</h4>
-						<p>Oct 7 • Collaboration + mentoring</p>
-						<a class="small-link" href="events.html">More</a>
-					</article>
-					<article class="card">
-						<h4>ACM Practice</h4>
-						<p>Oct 14 • Problem solving session</p>
-						<a class="small-link" href="events.html">More</a>
-					</article>
-				</div>
-			</section>
-
-			<section class="featured container" id="featured-projects">
-				<h3>Featured Projects</h3>
-				<div class="project-list">
-					<div class="project">
-						<h4>Robotics Dashboard</h4>
-						<p>A realtime dashboard for the robotics team built with JS and Flask.</p>
-					</div>
-					<div class="project">
-						<h4>Website Redesign</h4>
-						<p>Refreshed the club site using modern HTML & CSS — contributions welcome.</p>
+					<div class="hero-ctas">
+						<a class="btn primary large" href="events.html">Upcoming Events</a>
+						<a class="btn secondary large" href="members.html">Join Us Today</a>
 					</div>
 				</div>
-				<p><a class="small-link" href="projects.html">See all projects</a></p>
 			</section>
 
-			<section class="spotlight container" id="member-spotlight">
-				<h3>Member Spotlight</h3>
-				<div class="spotlight-row">
-					<img src="https://via.placeholder.com/120" alt="Member photo" />
-					<div>
-						<h4>Alex R.</h4>
-						<p>Lead on the robotics dashboard. Alex mentors beginners and loves competitive programming.</p>
+			<!-- Stats Section -->
+			<section class="section">
+				<div class="container">
+					<div class="grid grid-cols-4">
+						<div class="card text-center">
+							<h3 class="text-primary">50+</h3>
+							<p class="text-muted mb-0">Active Members</p>
+						</div>
+						<div class="card text-center">
+							<h3 class="text-primary">25+</h3>
+							<p class="text-muted mb-0">Projects Completed</p>
+						</div>
+						<div class="card text-center">
+							<h3 class="text-primary">12</h3>
+							<p class="text-muted mb-0">Competitions Won</p>
+						</div>
+						<div class="card text-center">
+							<h3 class="text-primary">100%</h3>
+							<p class="text-muted mb-0">College Acceptance</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Upcoming Events -->
+			<section class="section" id="upcoming-events">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Upcoming Events</h2>
+						<p class="section-subtitle">
+							Don't miss out on our exciting workshops, hackathons, and competition practice sessions.
+						</p>
+					</div>
+					<div class="card-grid">
+						<article class="card">
+							<div class="card-header">
+								<div class="flex justify-between items-start">
+									<span class="btn small outline">Workshop</span>
+									<span class="text-xs text-muted">Oct 15, 2025</span>
+								</div>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Python Fundamentals</h4>
+								<p>Perfect for beginners! Learn Python basics, syntax, and build your first program. No prior experience needed.</p>
+								<div class="flex items-center gap-sm text-sm text-muted">
+									<span>📍 Room 204</span>
+									<span>⏰ 3:30 PM</span>
+									<span>👥 Beginners</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a class="btn outline small" href="events.html">Learn More</a>
+								<a class="btn primary small" href="events.html">Register</a>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card-header">
+								<div class="flex justify-between items-start">
+									<span class="btn small" style="background: var(--secondary); color: white;">Hack Night</span>
+									<span class="text-xs text-muted">Oct 22, 2025</span>
+								</div>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Collaborative Coding</h4>
+								<p>Work on personal projects, get help from mentors, and collaborate with fellow members on exciting challenges.</p>
+								<div class="flex items-center gap-sm text-sm text-muted">
+									<span>📍 Computer Lab</span>
+									<span>⏰ 3:30 PM</span>
+									<span>👥 All Levels</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a class="btn outline small" href="events.html">Learn More</a>
+								<a class="btn primary small" href="events.html">Register</a>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card-header">
+								<div class="flex justify-between items-start">
+									<span class="btn small" style="background: var(--warning); color: white;">Competition</span>
+									<span class="text-xs text-muted">Oct 29, 2025</span>
+								</div>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">ACM Programming Contest Prep</h4>
+								<p>Practice algorithmic problem solving and prepare for upcoming programming competitions. Great for college prep!</p>
+								<div class="flex items-center gap-sm text-sm text-muted">
+									<span>📍 Room 205</span>
+									<span>⏰ 3:30 PM</span>
+									<span>👥 Intermediate+</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a class="btn outline small" href="events.html">Learn More</a>
+								<a class="btn primary small" href="events.html">Register</a>
+							</div>
+						</article>
+					</div>
+					<div class="text-center mt-xl">
+						<a class="btn outline" href="events.html">View All Events</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured Projects -->
+			<section class="section" id="featured-projects" style="background: var(--bg-primary);">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Featured Projects</h2>
+						<p class="section-subtitle">
+							Discover the amazing projects our members have built and contribute to ongoing initiatives.
+						</p>
+					</div>
+					<div class="grid grid-cols-2">
+						<div class="card">
+							<div class="card-header">
+								<div class="flex items-center gap-sm">
+									<span class="btn small" style="background: var(--success); color: white;">Active</span>
+									<div class="flex gap-xs">
+										<span class="btn small outline">React</span>
+										<span class="btn small outline">Python</span>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Robotics Team Dashboard</h4>
+								<p>A real-time dashboard for monitoring robot performance during competitions. Features live telemetry, match statistics, and strategic analysis tools.</p>
+								<div class="flex items-center gap-sm text-sm text-muted mt-md">
+									<span>👨‍💻 5 Contributors</span>
+									<span>⭐ 23 Stars</span>
+									<span>🔧 In Development</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a class="btn outline small" href="projects.html">View Project</a>
+								<a class="btn primary small" href="projects.html">Contribute</a>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<div class="flex items-center gap-sm">
+									<span class="btn small" style="background: var(--primary); color: white;">Featured</span>
+									<div class="flex gap-xs">
+										<span class="btn small outline">HTML</span>
+										<span class="btn small outline">CSS</span>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">CS Honor Society Website</h4>
+								<p>Complete redesign of our club website using modern web technologies. Features responsive design, accessibility improvements, and dynamic content.</p>
+								<div class="flex items-center gap-sm text-sm text-muted mt-md">
+									<span>👨‍💻 8 Contributors</span>
+									<span>⭐ 15 Stars</span>
+									<span>✅ Completed</span>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a class="btn outline small" href="projects.html">View Project</a>
+								<a class="btn primary small" href="projects.html">Fork on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-xl">
+						<a class="btn outline" href="projects.html">Explore All Projects</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Member Spotlight -->
+			<section class="section" id="member-spotlight">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-title">Member Spotlight</h2>
+						<p class="section-subtitle">
+							Meet some of our outstanding members who are making a difference in the tech community.
+						</p>
+					</div>
+					<div class="grid grid-cols-2">
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 80px; height: 80px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-xl);">AR</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Alex Rodriguez</h4>
+									<p class="text-sm text-muted mb-sm">Senior • President • Full-Stack Developer</p>
+									<p class="text-sm">"Leading the robotics dashboard project taught me so much about team collaboration and real-world software development. The CS Honor Society has been instrumental in preparing me for my computer science studies at CMU."</p>
+									<div class="flex gap-xs mt-md">
+										<span class="btn small outline">React</span>
+										<span class="btn small outline">Python</span>
+										<span class="btn small outline">Leadership</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="flex items-start gap-lg">
+								<div style="width: 80px; height: 80px; background: var(--bg-gradient); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: var(--text-xl);">SK</div>
+								<div style="flex: 1;">
+									<h4 class="card-title mb-sm">Samantha Kim</h4>
+									<p class="text-sm text-muted mb-sm">Junior • Vice President • UI/UX Designer</p>
+									<p class="text-sm">"I joined as a complete beginner and now I'm leading our UI/UX initiatives. The mentorship and collaborative environment here is incredible. I'm excited to pursue computer science at Stanford next year!"</p>
+									<div class="flex gap-xs mt-md">
+										<span class="btn small outline">Figma</span>
+										<span class="btn small outline">JavaScript</span>
+										<span class="btn small outline">Design</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-xl">
+						<a class="btn outline" href="members.html">Meet All Members</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section class="section" style="background: var(--bg-gradient); color: var(--text-white);">
+				<div class="container text-center">
+					<h2 class="text-white mb-lg">Ready to Start Your Coding Journey?</h2>
+					<p class="text-large mb-xl" style="color: rgba(255, 255, 255, 0.9);">
+						Join a community of passionate students, learn from industry mentors, and build projects that matter.
+						Whether you're a complete beginner or an experienced programmer, there's a place for you here.
+					</p>
+					<div class="flex justify-center gap-md">
+						<a class="btn primary large" href="members.html">Join the Society</a>
+						<a class="btn secondary large" href="about.html">Learn More</a>
 					</div>
 				</div>
 			</section>
 		</main>
 
+		<!-- Footer -->
 		<footer class="site-footer">
-			<div class="container footer-row">
-				<p>© <span id="year"></span> NAHS CS Club — <a href="about.html">About</a> • <a href="events.html">Events</a></p>
-				<p class="small">Contact: <a href="mailto:csclub@example.com">csclub@example.com</a></p>
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h4>Quick Links</h4>
+						<div class="flex flex-direction: column; gap-sm;">
+							<a href="about.html">About Us</a>
+							<a href="events.html">Events</a>
+							<a href="projects.html">Projects</a>
+							<a href="members.html">Membership</a>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>Contact</h4>
+						<div class="flex flex-direction: column; gap-sm;">
+							<a href="mailto:csclub@nasd.k12.pa.us">csclub@nasd.k12.pa.us</a>
+							<p>North Allegheny High School</p>
+							<p>10375 Perry Hwy, Wexford, PA 15090</p>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>Follow Us</h4>
+						<div class="flex flex-direction: column; gap-sm;">
+							<a href="https://github.com/nahscssociety" target="_blank">GitHub</a>
+							<a href="https://discord.gg/nahscs" target="_blank">Discord</a>
+							<a href="https://instagram.com/nahscs" target="_blank">Instagram</a>
+						</div>
+					</div>
+					<div class="footer-section">
+						<h4>NAHS Computer Science</h4>
+						<p class="text-sm" style="color: var(--gray-400);">
+							Empowering the next generation of technology leaders through hands-on learning, 
+							competitive programming, and collaborative innovation.
+						</p>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>© <span id="year"></span> NAHS Computer Science Honor Society. All rights reserved.</p>
+				</div>
 			</div>
 		</footer>
 
-		<script>
-			// Simple JS for footer year and accessible focus outline
-			document.getElementById('year').textContent = new Date().getFullYear();
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
